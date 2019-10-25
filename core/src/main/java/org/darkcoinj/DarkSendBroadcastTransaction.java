@@ -1,7 +1,7 @@
 package org.darkcoinj;
 
-import org.phorej.core.Transaction;
-import org.phorej.core.TransactionInput;
+import org.astraj.core.Transaction;
+import org.astraj.core.TransactionInput;
 
 /**
  * Created by Eric on 2/8/2015.
