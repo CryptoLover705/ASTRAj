@@ -1,7 +1,7 @@
 package org.darkcoinj;
 
-import org.phorej.core.DarkSendQueue;
-import org.phorej.core.Sha256Hash;
+import org.astraj.core.DarkSendQueue;
+import org.astraj.core.Sha256Hash;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
