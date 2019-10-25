@@ -1,6 +1,6 @@
 package org.darkcoinj;
 
-import org.phorej.core.*;
+import org.astraj.core.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
