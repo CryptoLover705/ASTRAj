@@ -1,9 +1,9 @@
 package org.darkcoinj;
 
-import org.phorej.core.*;
-import org.phorej.script.Script;
-import org.phorej.utils.ContextPropagatingThreadFactory;
-import org.phorej.utils.Threading;
+import org.astraj.core.*;
+import org.astraj.script.Script;
+import org.astraj.utils.ContextPropagatingThreadFactory;
+import org.astraj.utils.Threading;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
