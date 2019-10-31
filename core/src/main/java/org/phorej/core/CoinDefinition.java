@@ -1,4 +1,4 @@
-package org.phorej.core;
+package org.astraj.core;
 
 import java.math.BigInteger;
 import java.util.Map;
@@ -11,9 +11,9 @@ import java.util.Map;
  */
 public class CoinDefinition {
 
-    public static final String coinName = "Phore";
+    public static final String coinName = "Astra";
     public static final String coinTicker = "PHR";
-    public static final String coinURIScheme = "phore";
+    public static final String coinURIScheme = "astra";
     public static final String cryptsyMarketId = "155";
     public static final String cryptsyMarketCurrency = "PHR";
 
