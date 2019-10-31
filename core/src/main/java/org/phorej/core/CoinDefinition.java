@@ -12,10 +12,10 @@ import java.util.Map;
 public class CoinDefinition {
 
     public static final String coinName = "Astra";
-    public static final String coinTicker = "PHR";
+    public static final String coinTicker = "TR3B";
     public static final String coinURIScheme = "astra";
     public static final String cryptsyMarketId = "155";
-    public static final String cryptsyMarketCurrency = "PHR";
+    public static final String cryptsyMarketCurrency = "TR3B";
 
     public enum CoinPrecision {
         Coins,
