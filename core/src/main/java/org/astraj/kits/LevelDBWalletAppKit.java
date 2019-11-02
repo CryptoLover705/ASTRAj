@@ -1,10 +1,10 @@
-package org.phorej.kits;
+package org.astraj.kits;
 
-import org.phorej.core.NetworkParameters;
-import org.phorej.store.BlockStore;
-import org.phorej.store.BlockStoreException;
-import org.phorej.store.LevelDBBlockStore;
-import org.phorej.store.SPVBlockStore;
+import org.astraj.core.NetworkParameters;
+import org.astraj.store.BlockStore;
+import org.astraj.store.BlockStoreException;
+import org.astraj.store.LevelDBBlockStore;
+import org.astraj.store.SPVBlockStore;
 
 import java.io.File;
 

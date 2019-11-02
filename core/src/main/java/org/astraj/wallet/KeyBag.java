@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.astraj.wallet;
 
-import org.phorej.core.ECKey;
+import org.astraj.core.ECKey;
 
 import javax.annotation.Nullable;
 

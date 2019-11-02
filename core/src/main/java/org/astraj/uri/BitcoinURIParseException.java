@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.uri;
+package org.astraj.uri;
 
 /**
- * <p>Exception to provide the following to {@link PhoreURI}:</p>
+ * <p>Exception to provide the following to {@link astraURI}:</p>
  * <ul>
  * <li>Provision of parsing error messages</li>
  * </ul>

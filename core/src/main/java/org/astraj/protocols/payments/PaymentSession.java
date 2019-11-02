@@ -12,15 +12,15 @@
  * limitations under the License.
  */
 
-package org.phorej.protocols.payments;
+package org.astraj.protocols.payments;
 
-import org.phorej.core.*;
-import org.phorej.crypto.TrustStoreLoader;
-import org.phorej.params.MainNetParams;
-import org.phorej.protocols.payments.PaymentProtocol.PkiVerificationData;
-import org.phorej.uri.PhoreURI;
-import org.phorej.utils.Threading;
-import org.phorej.wallet.SendRequest;
+import org.astraj.core.*;
+import org.astraj.crypto.TrustStoreLoader;
+import org.astraj.params.MainNetParams;
+import org.astraj.protocols.payments.PaymentProtocol.PkiVerificationData;
+import org.astraj.uri.astraURI;
+import org.astraj.utils.Threading;
+import org.astraj.wallet.SendRequest;
 
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.util.concurrent.ListenableFuture;
@@ -45,12 +45,12 @@ import java.util.concurrent.Callable;
  * <p>A PaymentSession can be initialized from one of the following:</p>
  *
  * <ul>
- * <li>A {@link PhoreURI} object that conforms to BIP 0072</li>
+ * <li>A {@link astraURI} object that conforms to BIP 0072</li>
  * <li>A url where the {@link Protos.PaymentRequest} can be fetched</li>
  * <li>Directly with a {@link Protos.PaymentRequest} object</li>
  * </ul>
  *
- * <p>If initialized with a PhoreURI or a url, a network request is made for the payment request object and a
+ * <p>If initialized with a astraURI or a url, a network request is made for the payment request object and a
  * ListenableFuture is returned that will be notified with the PaymentSession object after it is downloaded.</p>
  *
  * <p>Once the PaymentSession is initialized, typically a wallet application will prompt the user to confirm that the
@@ -81,44 +81,44 @@ public class PaymentSession {
 
     /**
      * <p>Returns a future that will be notified with a PaymentSession object after it is fetched using the provided uri.
-     * uri is a BIP-72-style PhoreURI object that specifies where the {@link Protos.PaymentRequest} object may
+     * uri is a BIP-72-style astraURI object that specifies where the {@link Protos.PaymentRequest} object may
      * be fetched in the r= parameter.</p>
      *
      * <p>If the payment request object specifies a PKI method, then the system trust store will be used to verify
      * the signature provided by the payment request. An exception is thrown by the future if the signature cannot
      * be verified.</p>
      */
-    public static ListenableFuture<PaymentSession> createFromBitcoinUri(final PhoreURI uri) throws PaymentProtocolException {
+    public static ListenableFuture<PaymentSession> createFromBitcoinUri(final astraURI uri) throws PaymentProtocolException {
         return createFromBitcoinUri(uri, true, null);
     }
 
     /**
      * Returns a future that will be notified with a PaymentSession object after it is fetched using the provided uri.
-     * uri is a BIP-72-style PhoreURI object that specifies where the {@link Protos.PaymentRequest} object may
+     * uri is a BIP-72-style astraURI object that specifies where the {@link Protos.PaymentRequest} object may
      * be fetched in the r= parameter.
      * If verifyPki is specified and the payment request object specifies a PKI method, then the system trust store will
      * be used to verify the signature provided by the payment request. An exception is thrown by the future if the
      * signature cannot be verified.
      */
-    public static ListenableFuture<PaymentSession> createFromBitcoinUri(final PhoreURI uri, final boolean verifyPki)
+    public static ListenableFuture<PaymentSession> createFromBitcoinUri(final astraURI uri, final boolean verifyPki)
             throws PaymentProtocolException {
         return createFromBitcoinUri(uri, verifyPki, null);
     }
 
     /**
      * Returns a future that will be notified with a PaymentSession object after it is fetched using the provided uri.
-     * uri is a BIP-72-style PhoreURI object that specifies where the {@link Protos.PaymentRequest} object may
+     * uri is a BIP-72-style astraURI object that specifies where the {@link Protos.PaymentRequest} object may
      * be fetched in the r= parameter.
      * If verifyPki is specified and the payment request object specifies a PKI method, then the system trust store will
      * be used to verify the signature provided by the payment request. An exception is thrown by the future if the
      * signature cannot be verified.
      * If trustStoreLoader is null, the system default trust store is used.
      */
-    public static ListenableFuture<PaymentSession> createFromBitcoinUri(final PhoreURI uri, final boolean verifyPki, @Nullable final TrustStoreLoader trustStoreLoader)
+    public static ListenableFuture<PaymentSession> createFromBitcoinUri(final astraURI uri, final boolean verifyPki, @Nullable final TrustStoreLoader trustStoreLoader)
             throws PaymentProtocolException {
         String url = uri.getPaymentRequestUrl();
         if (url == null)
-            throw new PaymentProtocolException.InvalidPaymentRequestURL("No payment request URL (r= parameter) in PhoreURI " + uri);
+            throw new PaymentProtocolException.InvalidPaymentRequestURL("No payment request URL (r= parameter) in astraURI " + uri);
         try {
             return fetchPaymentRequest(new URI(url), verifyPki, trustStoreLoader);
         } catch (URISyntaxException e) {

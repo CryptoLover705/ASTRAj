@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-package org.phorej.protocols.payments;
+package org.astraj.protocols.payments;
 
-import org.phorej.core.*;
-import org.phorej.crypto.X509Utils;
-import org.phorej.script.ScriptBuilder;
+import org.astraj.core.*;
+import org.astraj.crypto.X509Utils;
+import org.astraj.script.ScriptBuilder;
 
 import com.google.common.base.MoreObjects;
 import com.google.common.collect.ImmutableList;

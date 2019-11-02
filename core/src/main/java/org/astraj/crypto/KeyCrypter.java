@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.crypto;
+package org.astraj.crypto;
 
-import org.phorej.wallet.Protos.Wallet.EncryptionType;
+import org.astraj.wallet.Protos.Wallet.EncryptionType;
 import org.spongycastle.crypto.params.KeyParameter;
 
 import java.io.Serializable;

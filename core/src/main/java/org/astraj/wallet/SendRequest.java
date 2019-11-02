@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.astraj.wallet;
 
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkNotNull;
@@ -24,18 +24,18 @@ import java.math.BigInteger;
 import java.util.Date;
 
 import org.bitcoin.protocols.payments.Protos.PaymentDetails;
-import org.phorej.core.Address;
-import org.phorej.core.Coin;
-import org.phorej.core.Context;
-import org.phorej.core.ECKey;
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.Transaction;
-import org.phorej.core.TransactionOutput;
-import org.phorej.script.Script;
-import org.phorej.script.ScriptBuilder;
-import org.phorej.utils.ExchangeRate;
-import org.phorej.wallet.KeyChain.KeyPurpose;
-import org.phorej.wallet.Wallet.MissingSigsMode;
+import org.astraj.core.Address;
+import org.astraj.core.Coin;
+import org.astraj.core.Context;
+import org.astraj.core.ECKey;
+import org.astraj.core.NetworkParameters;
+import org.astraj.core.Transaction;
+import org.astraj.core.TransactionOutput;
+import org.astraj.script.Script;
+import org.astraj.script.ScriptBuilder;
+import org.astraj.utils.ExchangeRate;
+import org.astraj.wallet.KeyChain.KeyPurpose;
+import org.astraj.wallet.Wallet.MissingSigsMode;
 import org.spongycastle.crypto.params.KeyParameter;
 
 import com.google.common.base.MoreObjects;
@@ -65,7 +65,7 @@ public class SendRequest {
 
     /**
      * When emptyWallet is set, all coins selected by the coin selector are sent to the first output in tx
-     * (its value is ignored and set to {@link org.phorej.wallet.Wallet#getBalance()} - the fees required
+     * (its value is ignored and set to {@link org.astraj.wallet.Wallet#getBalance()} - the fees required
      * for the transaction). Any additional outputs are removed.
      */
     public boolean emptyWallet = false;
@@ -115,7 +115,7 @@ public class SendRequest {
     public KeyParameter aesKey = null;
 
     /**
-     * If not null, the {@link org.phorej.wallet.CoinSelector} to use instead of the wallets default. Coin selectors are
+     * If not null, the {@link org.astraj.wallet.CoinSelector} to use instead of the wallets default. Coin selectors are
      * responsible for choosing which transaction outputs (coins) in a wallet to use given the desired send value
      * amount.
      */

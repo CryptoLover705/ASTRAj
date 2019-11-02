@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.phorej.tools;
+package org.astraj.tools;
 
-import org.phorej.crypto.TrustStoreLoader;
-import org.phorej.protocols.payments.PaymentProtocol;
-import org.phorej.protocols.payments.PaymentProtocolException;
-import org.phorej.protocols.payments.PaymentSession;
-import org.phorej.uri.PhoreURI;
-import org.phorej.uri.BitcoinURIParseException;
+import org.astraj.crypto.TrustStoreLoader;
+import org.astraj.protocols.payments.PaymentProtocol;
+import org.astraj.protocols.payments.PaymentProtocolException;
+import org.astraj.protocols.payments.PaymentSession;
+import org.astraj.uri.astraURI;
+import org.astraj.uri.BitcoinURIParseException;
 import org.bitcoin.protocols.payments.Protos;
 
 import java.io.FileInputStream;
@@ -58,7 +58,7 @@ public class PaymentProtocolTool {
             } else if ("http".equals(uri.getScheme())) {
                 session = PaymentSession.createFromUrl(arg).get();
             } else if ("bitcoin".equals(uri.getScheme())) {
-                PhoreURI bcuri = new PhoreURI(arg);
+                astraURI bcuri = new astraURI(arg);
                 final String paymentRequestUrl = bcuri.getPaymentRequestUrl();
                 if (paymentRequestUrl == null) {
                     System.err.println("No r= param in bitcoin URI");

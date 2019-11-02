@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-package org.phorej.protocols.channels;
+package org.astraj.protocols.channels;
 
-import org.phorej.core.Coin;
-import org.phorej.core.Sha256Hash;
-import org.phorej.core.TransactionBroadcaster;
-import org.phorej.net.NioServer;
-import org.phorej.net.ProtobufConnection;
-import org.phorej.net.StreamConnectionFactory;
-import org.phorej.wallet.Wallet;
+import org.astraj.core.Coin;
+import org.astraj.core.Sha256Hash;
+import org.astraj.core.TransactionBroadcaster;
+import org.astraj.net.NioServer;
+import org.astraj.net.ProtobufConnection;
+import org.astraj.net.StreamConnectionFactory;
+import org.astraj.wallet.Wallet;
 
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.protobuf.ByteString;

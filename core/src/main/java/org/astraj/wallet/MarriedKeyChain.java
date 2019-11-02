@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.astraj.wallet;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
 import com.google.protobuf.ByteString;
 
-import org.phorej.core.BloomFilter;
-import org.phorej.core.ECKey;
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.Utils;
-import org.phorej.crypto.DeterministicKey;
-import org.phorej.crypto.KeyCrypter;
-import org.phorej.script.Script;
-import org.phorej.script.ScriptBuilder;
+import org.astraj.core.BloomFilter;
+import org.astraj.core.ECKey;
+import org.astraj.core.NetworkParameters;
+import org.astraj.core.Utils;
+import org.astraj.crypto.DeterministicKey;
+import org.astraj.crypto.KeyCrypter;
+import org.astraj.script.Script;
+import org.astraj.script.ScriptBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

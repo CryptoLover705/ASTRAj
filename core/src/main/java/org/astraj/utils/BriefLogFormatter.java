@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.phorej.utils;
+package org.astraj.utils;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -51,7 +51,7 @@ public class BriefLogFormatter extends Formatter {
 
     public static void initWithSilentBitcoinJ() {
         init();
-        Logger.getLogger("org.phorej").setLevel(Level.SEVERE);
+        Logger.getLogger("org.astraj").setLevel(Level.SEVERE);
     }
 
     @Override

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.store;
+package org.astraj.store;
 
-import org.phorej.core.*;
-import org.phorej.utils.*;
+import org.astraj.core.*;
+import org.astraj.utils.*;
 import org.slf4j.*;
 
 import javax.annotation.*;

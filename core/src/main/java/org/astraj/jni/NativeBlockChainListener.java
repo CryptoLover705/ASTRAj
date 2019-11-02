@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.phorej.jni;
+package org.astraj.jni;
 
-import org.phorej.core.*;
+import org.astraj.core.*;
 
 import java.util.List;
-import org.phorej.core.listeners.NewBestBlockListener;
-import org.phorej.core.listeners.ReorganizeListener;
-import org.phorej.core.listeners.TransactionReceivedInBlockListener;
+import org.astraj.core.listeners.NewBestBlockListener;
+import org.astraj.core.listeners.ReorganizeListener;
+import org.astraj.core.listeners.TransactionReceivedInBlockListener;
 
 /**
  * An event listener that relays events to a native C++ object. A pointer to that object is stored in

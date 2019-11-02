@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package org.phorej.net.discovery;
+package org.astraj.net.discovery;
 
-import org.phorej.core.*;
-import org.phorej.utils.*;
+import org.astraj.core.*;
+import org.astraj.utils.*;
 
 import java.net.*;
 import java.util.*;

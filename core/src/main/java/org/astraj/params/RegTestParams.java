@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.params;
+package org.astraj.params;
 
-import org.phorej.core.Block;
+import org.astraj.core.Block;
 
 import java.math.BigInteger;
 

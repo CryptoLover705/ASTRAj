@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.astraj.wallet;
 
-import org.phorej.crypto.DeterministicKey;
-import org.phorej.crypto.KeyCrypter;
+import org.astraj.crypto.DeterministicKey;
+import org.astraj.crypto.KeyCrypter;
 
 /**
  * Factory interface for creation keychains while de-serializing a wallet.

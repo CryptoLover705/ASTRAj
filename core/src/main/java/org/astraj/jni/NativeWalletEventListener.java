@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.phorej.jni;
+package org.astraj.jni;
 
-import org.phorej.core.Coin;
-import org.phorej.core.ECKey;
-import org.phorej.core.Transaction;
-import org.phorej.script.Script;
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.listeners.WalletEventListener;
+import org.astraj.core.Coin;
+import org.astraj.core.ECKey;
+import org.astraj.core.Transaction;
+import org.astraj.script.Script;
+import org.astraj.wallet.Wallet;
+import org.astraj.wallet.listeners.WalletEventListener;
 
 import java.util.List;
 

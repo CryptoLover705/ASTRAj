@@ -16,12 +16,12 @@ package wallettemplate;
 
 import com.google.common.util.concurrent.*;
 import javafx.scene.input.*;
-import org.phorej.core.NetworkParameters;
-import org.phorej.kits.WalletAppKit;
-import org.phorej.params.*;
-import org.phorej.utils.BriefLogFormatter;
-import org.phorej.utils.Threading;
-import org.phorej.wallet.DeterministicSeed;
+import org.astraj.core.NetworkParameters;
+import org.astraj.kits.WalletAppKit;
+import org.astraj.params.*;
+import org.astraj.utils.BriefLogFormatter;
+import org.astraj.utils.Threading;
+import org.astraj.wallet.DeterministicSeed;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;

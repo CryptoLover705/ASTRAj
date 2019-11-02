@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.astraj.examples;
 
-import org.phorej.core.NetworkParameters;
-import org.phorej.params.MainNetParams;
-import org.phorej.params.RegTestParams;
-import org.phorej.params.TestNet3Params;
+import org.astraj.core.NetworkParameters;
+import org.astraj.params.MainNetParams;
+import org.astraj.params.RegTestParams;
+import org.astraj.params.TestNet3Params;
 
 public enum NetworkEnum {
     MAIN,

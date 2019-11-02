@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.astraj.examples;
 
-import org.phorej.core.*;
-import org.phorej.crypto.KeyCrypterException;
-import org.phorej.kits.WalletAppKit;
-import org.phorej.params.MainNetParams;
-import org.phorej.params.RegTestParams;
-import org.phorej.params.TestNet3Params;
-import org.phorej.store.FlatDB;
-import org.phorej.utils.BriefLogFormatter;
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.astraj.core.*;
+import org.astraj.crypto.KeyCrypterException;
+import org.astraj.kits.WalletAppKit;
+import org.astraj.params.MainNetParams;
+import org.astraj.params.RegTestParams;
+import org.astraj.params.TestNet3Params;
+import org.astraj.store.FlatDB;
+import org.astraj.utils.BriefLogFormatter;
+import org.astraj.wallet.Wallet;
+import org.astraj.wallet.listeners.WalletCoinsReceivedEventListener;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;

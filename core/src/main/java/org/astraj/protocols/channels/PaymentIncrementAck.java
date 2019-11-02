@@ -12,9 +12,9 @@
  * limitations under the License.
  */
 
-package org.phorej.protocols.channels;
+package org.astraj.protocols.channels;
 
-import org.phorej.core.Coin;
+import org.astraj.core.Coin;
 import com.google.protobuf.ByteString;
 
 import javax.annotation.Nullable;

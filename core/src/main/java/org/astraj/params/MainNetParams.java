@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.phorej.params;
+package org.astraj.params;
 
-import org.phorej.core.*;
+import org.astraj.core.*;
 
 import static com.google.common.base.Preconditions.*;
 

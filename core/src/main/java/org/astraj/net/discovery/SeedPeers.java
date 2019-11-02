@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.net.discovery;
+package org.astraj.net.discovery;
 
-import org.phorej.core.NetworkParameters;
+import org.astraj.core.NetworkParameters;
 
 import javax.annotation.Nullable;
 import java.net.InetAddress;

@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.phorej.utils;
+package org.astraj.utils;
 
-import org.phorej.core.Block;
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.ProtocolException;
-import org.phorej.core.Utils;
+import org.astraj.core.Block;
+import org.astraj.core.NetworkParameters;
+import org.astraj.core.ProtocolException;
+import org.astraj.core.Utils;
 
 import java.io.File;
 import java.io.FileInputStream;

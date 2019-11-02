@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.astraj.examples;
 
-import org.phorej.core.*;
-import org.phorej.params.MainNetParams;
-import org.phorej.store.MemoryBlockStore;
-import org.phorej.wallet.Wallet;
+import org.astraj.core.*;
+import org.astraj.params.MainNetParams;
+import org.astraj.store.MemoryBlockStore;
+import org.astraj.wallet.Wallet;
 
 import java.math.BigInteger;
 import java.net.InetAddress;

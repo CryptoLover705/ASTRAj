@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet.listeners;
+package org.astraj.wallet.listeners;
 
-import org.phorej.script.Script;
-import org.phorej.wallet.Wallet;
+import org.astraj.script.Script;
+import org.astraj.wallet.Wallet;
 
 import java.util.List;
 

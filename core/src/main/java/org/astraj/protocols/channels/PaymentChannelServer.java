@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.phorej.protocols.channels;
+package org.astraj.protocols.channels;
 
 import com.google.common.collect.ImmutableMap;
-import org.phorej.core.*;
-import org.phorej.protocols.channels.PaymentChannelCloseException.CloseReason;
-import org.phorej.utils.Threading;
-import org.phorej.wallet.Wallet;
+import org.astraj.core.*;
+import org.astraj.protocols.channels.PaymentChannelCloseException.CloseReason;
+import org.astraj.utils.Threading;
+import org.astraj.wallet.Wallet;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;

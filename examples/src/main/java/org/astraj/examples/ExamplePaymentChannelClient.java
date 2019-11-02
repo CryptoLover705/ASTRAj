@@ -15,22 +15,22 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.astraj.examples;
 
 import joptsimple.OptionParser;
 import joptsimple.OptionSet;
 import joptsimple.OptionSpec;
-import org.phorej.core.*;
-import org.phorej.kits.WalletAppKit;
-import org.phorej.params.RegTestParams;
-import org.phorej.protocols.channels.PaymentChannelClient;
-import org.phorej.protocols.channels.PaymentChannelClientConnection;
-import org.phorej.protocols.channels.StoredPaymentChannelClientStates;
-import org.phorej.protocols.channels.ValueOutOfRangeException;
-import org.phorej.utils.BriefLogFormatter;
-import org.phorej.utils.Threading;
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.WalletExtension;
+import org.astraj.core.*;
+import org.astraj.kits.WalletAppKit;
+import org.astraj.params.RegTestParams;
+import org.astraj.protocols.channels.PaymentChannelClient;
+import org.astraj.protocols.channels.PaymentChannelClientConnection;
+import org.astraj.protocols.channels.StoredPaymentChannelClientStates;
+import org.astraj.protocols.channels.ValueOutOfRangeException;
+import org.astraj.utils.BriefLogFormatter;
+import org.astraj.utils.Threading;
+import org.astraj.wallet.Wallet;
+import org.astraj.wallet.WalletExtension;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.util.concurrent.FutureCallback;
@@ -46,7 +46,7 @@ import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutionException;
 
-import static org.phorej.core.Coin.CENT;
+import static org.astraj.core.Coin.CENT;
 
 /**
  * Simple client that connects to the given host, opens a channel, and pays one cent.

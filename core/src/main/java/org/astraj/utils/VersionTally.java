@@ -14,22 +14,22 @@
  * limitations under the License.
  */
 
-package org.phorej.utils;
+package org.astraj.utils;
 
 import java.util.Stack;
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.StoredBlock;
-import org.phorej.store.BlockStore;
-import org.phorej.store.BlockStoreException;
+import org.astraj.core.NetworkParameters;
+import org.astraj.core.StoredBlock;
+import org.astraj.store.BlockStore;
+import org.astraj.store.BlockStoreException;
 
 /**
  * Caching counter for the block versions within a moving window. This class
  * is NOT thread safe (as if two threads are trying to use it concurrently,
  * there's risk of getting versions out of sequence).
  *
- * @see org.phorej.core.NetworkParameters#getMajorityWindow()
- * @see org.phorej.core.NetworkParameters#getMajorityEnforceBlockUpgrade()
- * @see org.phorej.core.NetworkParameters#getMajorityRejectBlockOutdated()
+ * @see org.astraj.core.NetworkParameters#getMajorityWindow()
+ * @see org.astraj.core.NetworkParameters#getMajorityEnforceBlockUpgrade()
+ * @see org.astraj.core.NetworkParameters#getMajorityRejectBlockOutdated()
  */
 public class VersionTally {
     /**

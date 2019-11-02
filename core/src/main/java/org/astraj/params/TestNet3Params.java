@@ -15,19 +15,19 @@
  * limitations under the License.
  */
 
-package org.phorej.params;
+package org.astraj.params;
 
-import org.phorej.core.CoinDefinition;
+import org.astraj.core.CoinDefinition;
 
 import java.math.BigInteger;
 import java.util.Date;
 
-import org.phorej.core.Block;
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.StoredBlock;
-import org.phorej.core.VerificationException;
-import org.phorej.store.BlockStore;
-import org.phorej.store.BlockStoreException;
+import org.astraj.core.Block;
+import org.astraj.core.NetworkParameters;
+import org.astraj.core.StoredBlock;
+import org.astraj.core.VerificationException;
+import org.astraj.store.BlockStore;
+import org.astraj.store.BlockStoreException;
 
 import static com.google.common.base.Preconditions.checkState;
 

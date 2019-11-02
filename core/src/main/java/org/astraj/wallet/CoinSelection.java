@@ -12,10 +12,10 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.astraj.wallet;
 
-import org.phorej.core.Coin;
-import org.phorej.core.TransactionOutput;
+import org.astraj.core.Coin;
+import org.astraj.core.TransactionOutput;
 
 import java.util.Collection;
 

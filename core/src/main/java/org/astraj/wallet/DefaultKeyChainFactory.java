@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.astraj.wallet;
 
-import org.phorej.crypto.*;
+import org.astraj.crypto.*;
 
 /**
  * Default factory for creating keychains while de-serializing.

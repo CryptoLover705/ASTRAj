@@ -1,8 +1,8 @@
-package org.phorej.wallet;
+package org.astraj.wallet;
 
-import org.phorej.core.Transaction;
-import org.phorej.core.TransactionConfidence;
-import org.phorej.params.RegTestParams;
+import org.astraj.core.Transaction;
+import org.astraj.core.TransactionConfidence;
+import org.astraj.params.RegTestParams;
 
 /**
  * Created by Eric on 1/15/2016.

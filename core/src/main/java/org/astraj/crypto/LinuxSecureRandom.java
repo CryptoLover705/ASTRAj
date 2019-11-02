@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.phorej.crypto;
+package org.astraj.crypto;
 
 import org.slf4j.*;
 

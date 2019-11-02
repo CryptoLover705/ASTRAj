@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.phorej.protocols.channels;
+package org.astraj.protocols.channels;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
-import org.phorej.core.*;
-import org.phorej.utils.Threading;
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.WalletExtension;
+import org.astraj.core.*;
+import org.astraj.utils.Threading;
+import org.astraj.wallet.Wallet;
+import org.astraj.wallet.WalletExtension;
 
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.HashMultimap;

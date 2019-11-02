@@ -12,15 +12,15 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.astraj.examples;
 
-import org.phorej.core.listeners.DownloadProgressTracker;
-import org.phorej.core.*;
-import org.phorej.net.discovery.DnsDiscovery;
-import org.phorej.params.TestNet3Params;
-import org.phorej.store.SPVBlockStore;
-import org.phorej.wallet.DeterministicSeed;
-import org.phorej.wallet.Wallet;
+import org.astraj.core.listeners.DownloadProgressTracker;
+import org.astraj.core.*;
+import org.astraj.net.discovery.DnsDiscovery;
+import org.astraj.params.TestNet3Params;
+import org.astraj.store.SPVBlockStore;
+import org.astraj.wallet.DeterministicSeed;
+import org.astraj.wallet.Wallet;
 
 import java.io.File;
 

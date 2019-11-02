@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.phorej.jni;
+package org.astraj.jni;
 
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.listeners.WalletCoinsSentEventListener;
-import org.phorej.core.Coin;
-import org.phorej.core.Transaction;
+import org.astraj.wallet.Wallet;
+import org.astraj.wallet.listeners.WalletCoinsSentEventListener;
+import org.astraj.core.Coin;
+import org.astraj.core.Transaction;
 
 /**
  * An event listener that relays events to a native C++ object. A pointer to that object is stored in

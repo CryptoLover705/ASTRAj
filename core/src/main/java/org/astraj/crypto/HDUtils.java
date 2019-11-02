@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.phorej.crypto;
+package org.astraj.crypto;
 
-import org.phorej.core.ECKey;
+import org.astraj.core.ECKey;
 import com.google.common.base.Joiner;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Iterables;

@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package org.phorej.protocols.channels;
+package org.astraj.protocols.channels;
 
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.MultimapBuilder;
-import org.phorej.core.*;
-import org.phorej.crypto.TransactionSignature;
-import org.phorej.script.Script;
-import org.phorej.script.ScriptBuilder;
-import org.phorej.wallet.AllowUnconfirmedCoinSelector;
-import org.phorej.wallet.SendRequest;
-import org.phorej.wallet.Wallet;
+import org.astraj.core.*;
+import org.astraj.crypto.TransactionSignature;
+import org.astraj.script.Script;
+import org.astraj.script.ScriptBuilder;
+import org.astraj.wallet.AllowUnconfirmedCoinSelector;
+import org.astraj.wallet.SendRequest;
+import org.astraj.wallet.Wallet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongycastle.crypto.params.KeyParameter;

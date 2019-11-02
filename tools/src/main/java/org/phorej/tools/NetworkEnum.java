@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.phorej.tools;
+package org.astraj.tools;
 
 public enum NetworkEnum {
     MAIN,

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.astraj.wallet;
 
-import org.phorej.core.Transaction;
+import org.astraj.core.Transaction;
 
 import java.util.List;
 

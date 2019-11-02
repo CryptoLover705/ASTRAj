@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-package org.phorej.net.discovery;
+package org.astraj.net.discovery;
 
 import com.google.common.collect.Lists;
 import com.squareup.okhttp.OkHttpClient;
 
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.VersionMessage;
-import org.phorej.net.discovery.DnsDiscovery.DnsSeedDiscovery;
-import org.phorej.utils.*;
+import org.astraj.core.NetworkParameters;
+import org.astraj.core.VersionMessage;
+import org.astraj.net.discovery.DnsDiscovery.DnsSeedDiscovery;
+import org.astraj.utils.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

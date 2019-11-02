@@ -16,10 +16,10 @@
  * limitations under the License.
  */
 
-package org.phorej.script;
+package org.astraj.script;
 
-import org.phorej.core.*;
-import org.phorej.crypto.TransactionSignature;
+import org.astraj.core.*;
+import org.astraj.crypto.TransactionSignature;
 import com.google.common.collect.Lists;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -35,7 +35,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.*;
 
-import static org.phorej.script.ScriptOpCodes.*;
+import static org.astraj.script.ScriptOpCodes.*;
 import static com.google.common.base.Preconditions.*;
 
 // TODO: Redesign this entire API to be more type safe and organised.
@@ -838,12 +838,12 @@ public class Script {
 
     /**
      * Exposes the script interpreter. Normally you should not use this directly, instead use
-     * {@link org.phorej.core.TransactionInput#verify(org.phorej.core.TransactionOutput)} or
-     * {@link org.phorej.script.Script#correctlySpends(org.phorej.core.Transaction, long, Script)}. This method
+     * {@link org.astraj.core.TransactionInput#verify(org.astraj.core.TransactionOutput)} or
+     * {@link org.astraj.script.Script#correctlySpends(org.astraj.core.Transaction, long, Script)}. This method
      * is useful if you need more precise control or access to the final state of the stack. This interface is very
      * likely to change in future.
      *
-     * @deprecated Use {@link #executeScript(org.phorej.core.Transaction, long, org.phorej.script.Script, java.util.LinkedList, java.util.Set)}
+     * @deprecated Use {@link #executeScript(org.astraj.core.Transaction, long, org.astraj.script.Script, java.util.LinkedList, java.util.Set)}
      * instead.
      */
     @Deprecated
@@ -858,8 +858,8 @@ public class Script {
 
     /**
      * Exposes the script interpreter. Normally you should not use this directly, instead use
-     * {@link org.phorej.core.TransactionInput#verify(org.phorej.core.TransactionOutput)} or
-     * {@link org.phorej.script.Script#correctlySpends(org.phorej.core.Transaction, long, Script)}. This method
+     * {@link org.astraj.core.TransactionInput#verify(org.astraj.core.TransactionOutput)} or
+     * {@link org.astraj.script.Script#correctlySpends(org.astraj.core.Transaction, long, Script)}. This method
      * is useful if you need more precise control or access to the final state of the stack. This interface is very
      * likely to change in future.
      */
@@ -1564,7 +1564,7 @@ public class Script {
      *                         Accessing txContainingThis from another thread while this method runs results in undefined behavior.
      * @param scriptSigIndex The index in txContainingThis of the scriptSig (note: NOT the index of the scriptPubKey).
      * @param scriptPubKey The connected scriptPubKey containing the conditions needed to claim the value.
-     * @deprecated Use {@link #correctlySpends(org.phorej.core.Transaction, long, org.phorej.script.Script, java.util.Set)}
+     * @deprecated Use {@link #correctlySpends(org.astraj.core.Transaction, long, org.astraj.script.Script, java.util.Set)}
      * instead so that verification flags do not change as new verification options
      * are added.
      */
@@ -1648,7 +1648,7 @@ public class Script {
     }
 
     /**
-     * Get the {@link org.phorej.script.Script.ScriptType}.
+     * Get the {@link org.astraj.script.Script.ScriptType}.
      * @return The script type.
      */
     public ScriptType getScriptType() {

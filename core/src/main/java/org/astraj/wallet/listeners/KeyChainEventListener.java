@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet.listeners;
+package org.astraj.wallet.listeners;
 
-import org.phorej.core.ECKey;
-import org.phorej.wallet.KeyChain;
+import org.astraj.core.ECKey;
+import org.astraj.wallet.KeyChain;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package org.darkcoinj;
 
-import org.phorej.core.*;
+import org.astraj.core.*;
 
 import java.util.ArrayList;
 

@@ -14,8 +14,8 @@
 
 package wallettemplate.controls;
 
-import org.phorej.core.Address;
-import org.phorej.uri.PhoreURI;
+import org.astraj.core.Address;
+import org.astraj.uri.astraURI;
 import de.jensd.fx.fontawesome.AwesomeDude;
 import de.jensd.fx.fontawesome.AwesomeIcon;
 import javafx.beans.binding.StringExpression;
@@ -85,7 +85,7 @@ public class ClickableBitcoinAddress extends AnchorPane {
     }
 
     public String uri() {
-        return PhoreURI.convertToBitcoinURI(address.get(), null, Main.APP_NAME, null);
+        return astraURI.convertToBitcoinURI(address.get(), null, Main.APP_NAME, null);
     }
 
     public Address getAddress() {

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.phorej.crypto;
+package org.astraj.crypto;
 
 import javax.annotation.Nonnull;
 import java.io.File;

@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.astraj.examples;
 
-import org.phorej.core.*;
-import org.phorej.params.TestNet3Params;
-import org.phorej.store.BlockStore;
-import org.phorej.store.MemoryBlockStore;
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.astraj.core.*;
+import org.astraj.params.TestNet3Params;
+import org.astraj.store.BlockStore;
+import org.astraj.store.MemoryBlockStore;
+import org.astraj.wallet.Wallet;
+import org.astraj.wallet.listeners.WalletCoinsReceivedEventListener;
 
 import java.io.File;
 

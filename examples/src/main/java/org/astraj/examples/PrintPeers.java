@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.astraj.examples;
 
-import org.phorej.core.listeners.PeerConnectedEventListener;
-import org.phorej.core.listeners.PeerDisconnectedEventListener;
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.Peer;
-import org.phorej.core.PeerAddress;
-import org.phorej.core.VersionMessage;
-import org.phorej.net.discovery.DnsDiscovery;
-import org.phorej.net.discovery.PeerDiscoveryException;
-import org.phorej.net.NioClientManager;
-import org.phorej.params.MainNetParams;
-import org.phorej.utils.BriefLogFormatter;
+import org.astraj.core.listeners.PeerConnectedEventListener;
+import org.astraj.core.listeners.PeerDisconnectedEventListener;
+import org.astraj.core.NetworkParameters;
+import org.astraj.core.Peer;
+import org.astraj.core.PeerAddress;
+import org.astraj.core.VersionMessage;
+import org.astraj.net.discovery.DnsDiscovery;
+import org.astraj.net.discovery.PeerDiscoveryException;
+import org.astraj.net.NioClientManager;
+import org.astraj.params.MainNetParams;
+import org.astraj.utils.BriefLogFormatter;
 import com.google.common.collect.Lists;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;

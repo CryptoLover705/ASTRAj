@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.phorej.store;
+package org.astraj.store;
 
 import sun.misc.*;
 import sun.nio.ch.*;

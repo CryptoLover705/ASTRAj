@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.astraj.examples;
 
 import java.net.InetAddress;
-import org.phorej.core.FullPrunedBlockChain;
-import org.phorej.core.PeerGroup;
-import org.phorej.params.MainNetParams;
-import org.phorej.store.FullPrunedBlockStore;
-import org.phorej.store.LevelDBFullPrunedBlockStore;
+import org.astraj.core.FullPrunedBlockChain;
+import org.astraj.core.PeerGroup;
+import org.astraj.params.MainNetParams;
+import org.astraj.store.FullPrunedBlockStore;
+import org.astraj.store.LevelDBFullPrunedBlockStore;
 
 public class LevelDB {
     public static void main(String[] args) throws Exception {

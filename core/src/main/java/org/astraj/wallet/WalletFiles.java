@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.astraj.wallet;
 
-import org.phorej.core.*;
-import org.phorej.utils.*;
+import org.astraj.core.*;
+import org.astraj.utils.*;
 import org.slf4j.*;
 
 import com.google.common.base.Stopwatch;

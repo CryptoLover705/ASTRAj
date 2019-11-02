@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.astraj.examples;
 
-import org.phorej.core.listeners.PeerConnectedEventListener;
-import org.phorej.core.listeners.PeerDisconnectedEventListener;
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.Peer;
-import org.phorej.core.PeerGroup;
-import org.phorej.net.discovery.DnsDiscovery;
-import org.phorej.params.MainNetParams;
-import org.phorej.utils.BriefLogFormatter;
+import org.astraj.core.listeners.PeerConnectedEventListener;
+import org.astraj.core.listeners.PeerDisconnectedEventListener;
+import org.astraj.core.NetworkParameters;
+import org.astraj.core.Peer;
+import org.astraj.core.PeerGroup;
+import org.astraj.net.discovery.DnsDiscovery;
+import org.astraj.params.MainNetParams;
+import org.astraj.utils.BriefLogFormatter;
 import com.google.common.collect.Lists;
 
 import javax.swing.*;

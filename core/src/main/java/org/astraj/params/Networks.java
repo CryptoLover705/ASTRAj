@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.params;
+package org.astraj.params;
 
-import org.phorej.core.NetworkParameters;
+import org.astraj.core.NetworkParameters;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Lists;
 

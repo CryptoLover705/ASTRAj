@@ -15,20 +15,20 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.astraj.examples;
 
 import joptsimple.OptionParser;
 import joptsimple.OptionSet;
 import joptsimple.OptionSpec;
-import org.phorej.core.Coin;
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.Sha256Hash;
-import org.phorej.core.VerificationException;
-import org.phorej.kits.WalletAppKit;
-import org.phorej.params.RegTestParams;
-import org.phorej.protocols.channels.*;
-import org.phorej.utils.BriefLogFormatter;
-import org.phorej.wallet.WalletExtension;
+import org.astraj.core.Coin;
+import org.astraj.core.NetworkParameters;
+import org.astraj.core.Sha256Hash;
+import org.astraj.core.VerificationException;
+import org.astraj.kits.WalletAppKit;
+import org.astraj.params.RegTestParams;
+import org.astraj.protocols.channels.*;
+import org.astraj.utils.BriefLogFormatter;
+import org.astraj.wallet.WalletExtension;
 
 import com.google.common.collect.ImmutableList;
 

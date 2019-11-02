@@ -12,10 +12,10 @@
  * limitations under the License.
  */
 
-package org.phorej.jni;
+package org.astraj.jni;
 
-import org.phorej.protocols.channels.PaymentChannelServerListener;
-import org.phorej.protocols.channels.ServerConnectionEventHandler;
+import org.astraj.protocols.channels.PaymentChannelServerListener;
+import org.astraj.protocols.channels.ServerConnectionEventHandler;
 
 import javax.annotation.Nullable;
 import java.net.SocketAddress;

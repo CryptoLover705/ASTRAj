@@ -12,19 +12,19 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.astraj.examples;
 
-import org.phorej.core.listeners.PreMessageReceivedEventListener;
-import org.phorej.core.*;
-import org.phorej.kits.WalletAppKit;
-import org.phorej.params.RegTestParams;
-import org.phorej.utils.BriefLogFormatter;
-import org.phorej.utils.Threading;
-import org.phorej.wallet.Wallet;
+import org.astraj.core.listeners.PreMessageReceivedEventListener;
+import org.astraj.core.*;
+import org.astraj.kits.WalletAppKit;
+import org.astraj.params.RegTestParams;
+import org.astraj.utils.BriefLogFormatter;
+import org.astraj.utils.Threading;
+import org.astraj.wallet.Wallet;
 
 import java.io.File;
 
-import static org.phorej.core.Coin.*;
+import static org.astraj.core.Coin.*;
 
 /**
  * This is a little test app that waits for a coin on a local regtest node, then  generates two transactions that double

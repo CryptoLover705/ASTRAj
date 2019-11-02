@@ -12,13 +12,13 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.astraj.examples;
 
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.Utils;
-import org.phorej.params.TestNet3Params;
-import org.phorej.wallet.DeterministicSeed;
-import org.phorej.wallet.Wallet;
+import org.astraj.core.NetworkParameters;
+import org.astraj.core.Utils;
+import org.astraj.params.TestNet3Params;
+import org.astraj.wallet.DeterministicSeed;
+import org.astraj.wallet.Wallet;
 
 /**
  * The following example shows you how to create a deterministic seed from a hierarchical deterministic wallet represented as a mnemonic code.

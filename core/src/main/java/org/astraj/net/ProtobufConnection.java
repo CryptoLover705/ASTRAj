@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.net;
+package org.astraj.net;
 
-import org.phorej.core.Utils;
-import org.phorej.utils.Threading;
+import org.astraj.core.Utils;
+import org.astraj.utils.Threading;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.protobuf.ByteString;
 import com.google.protobuf.MessageLite;

@@ -12,16 +12,16 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.astraj.examples;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
-import org.phorej.core.*;
-import org.phorej.kits.WalletAppKit;
-import org.phorej.params.TestNet3Params;
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.Wallet.BalanceType;
+import org.astraj.core.*;
+import org.astraj.kits.WalletAppKit;
+import org.astraj.params.TestNet3Params;
+import org.astraj.wallet.Wallet;
+import org.astraj.wallet.Wallet.BalanceType;
 
 import java.io.File;
 

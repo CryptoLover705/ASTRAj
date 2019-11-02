@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.net;
+package org.astraj.net;
 
-import org.phorej.core.Message;
-import org.phorej.utils.Threading;
+import org.astraj.core.Message;
+import org.astraj.utils.Threading;
 import com.google.common.base.Throwables;
 import org.slf4j.LoggerFactory;
 

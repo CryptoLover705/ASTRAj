@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.phorej.crypto;
+package org.astraj.crypto;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Maps;

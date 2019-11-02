@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.astraj.examples;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -24,24 +24,24 @@ import java.util.EnumSet;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
-import org.phorej.core.Coin;
-import org.phorej.core.ECKey;
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.ScriptException;
-import org.phorej.core.Transaction;
-import org.phorej.core.TransactionInput;
-import org.phorej.core.TransactionOutput;
-import org.phorej.core.Utils;
-import org.phorej.crypto.TransactionSignature;
-import org.phorej.params.MainNetParams;
-import org.phorej.script.Script;
-import org.phorej.script.ScriptBuilder;
-import org.phorej.script.ScriptChunk;
-import static org.phorej.script.ScriptOpCodes.getOpCodeName;
-import org.phorej.signers.LocalTransactionSigner;
-import org.phorej.signers.TransactionSigner.ProposedTransaction;
-import org.phorej.wallet.KeyBag;
-import org.phorej.wallet.RedeemData;
+import org.astraj.core.Coin;
+import org.astraj.core.ECKey;
+import org.astraj.core.NetworkParameters;
+import org.astraj.core.ScriptException;
+import org.astraj.core.Transaction;
+import org.astraj.core.TransactionInput;
+import org.astraj.core.TransactionOutput;
+import org.astraj.core.Utils;
+import org.astraj.crypto.TransactionSignature;
+import org.astraj.params.MainNetParams;
+import org.astraj.script.Script;
+import org.astraj.script.ScriptBuilder;
+import org.astraj.script.ScriptChunk;
+import static org.astraj.script.ScriptOpCodes.getOpCodeName;
+import org.astraj.signers.LocalTransactionSigner;
+import org.astraj.signers.TransactionSigner.ProposedTransaction;
+import org.astraj.wallet.KeyBag;
+import org.astraj.wallet.RedeemData;
 
 /**
  * Test case generator for transactions with low-S and high-S signatures, to

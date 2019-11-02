@@ -12,16 +12,16 @@
  * limitations under the License.
  */
 
-package org.phorej.tools;
+package org.astraj.tools;
 
-import org.phorej.core.*;
-import org.phorej.core.listeners.PeerConnectedEventListener;
-import org.phorej.core.listeners.PeerDisconnectedEventListener;
-import org.phorej.kits.WalletAppKit;
-import org.phorej.params.MainNetParams;
-import org.phorej.utils.BriefLogFormatter;
-import org.phorej.wallet.SendRequest;
-import org.phorej.wallet.Wallet;
+import org.astraj.core.*;
+import org.astraj.core.listeners.PeerConnectedEventListener;
+import org.astraj.core.listeners.PeerDisconnectedEventListener;
+import org.astraj.kits.WalletAppKit;
+import org.astraj.params.MainNetParams;
+import org.astraj.utils.BriefLogFormatter;
+import org.astraj.wallet.SendRequest;
+import org.astraj.wallet.Wallet;
 
 import java.io.File;
 

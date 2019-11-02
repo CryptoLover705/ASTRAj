@@ -15,17 +15,17 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.astraj.wallet;
 
 import com.google.common.collect.Lists;
-import org.phorej.core.BloomFilter;
-import org.phorej.core.ECKey;
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.Utils;
-import org.phorej.crypto.*;
-import org.phorej.script.Script;
-import org.phorej.utils.Threading;
-import org.phorej.wallet.listeners.KeyChainEventListener;
+import org.astraj.core.BloomFilter;
+import org.astraj.core.ECKey;
+import org.astraj.core.NetworkParameters;
+import org.astraj.core.Utils;
+import org.astraj.crypto.*;
+import org.astraj.script.Script;
+import org.astraj.utils.Threading;
+import org.astraj.wallet.listeners.KeyChainEventListener;
 
 import com.google.common.base.Stopwatch;
 import com.google.common.collect.ImmutableList;
@@ -50,10 +50,10 @@ import static com.google.common.collect.Lists.newLinkedList;
 /**
  * <p>A deterministic key chain is a {@link KeyChain} that uses the
  * <a href="https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki">BIP 32 standard</a>, as implemented by
- * {@link org.phorej.crypto.DeterministicHierarchy}, to derive all the keys in the keychain from a master seed.
+ * {@link org.astraj.crypto.DeterministicHierarchy}, to derive all the keys in the keychain from a master seed.
  * This type of wallet is extremely convenient and flexible. Although backing up full wallet files is always a good
  * idea, to recover money only the root seed needs to be preserved and that is a number small enough that it can be
- * written down on paper or, when represented using a BIP 39 {@link org.phorej.crypto.MnemonicCode},
+ * written down on paper or, when represented using a BIP 39 {@link org.astraj.crypto.MnemonicCode},
  * dictated over the phone (possibly even memorized).</p>
  *
  * <p>Deterministic key chains have other advantages: parts of the key tree can be selectively revealed to allow
@@ -63,14 +63,14 @@ import static com.google.common.collect.Lists.newLinkedList;
  * A watching wallet is not instantiated using the public part of the master key as you may imagine. Instead, you
  * need to take the account key (first child of the master key) and provide the public part of that to the watching
  * wallet instead. You can do this by calling {@link #getWatchingKey()} and then serializing it with
- * {@link org.phorej.crypto.DeterministicKey#serializePubB58(org.phorej.core.NetworkParameters)}. The resulting "xpub..." string encodes
+ * {@link org.astraj.crypto.DeterministicKey#serializePubB58(org.astraj.core.NetworkParameters)}. The resulting "xpub..." string encodes
  * sufficient information about the account key to create a watching chain via
- * {@link org.phorej.crypto.DeterministicKey#deserializeB58(org.phorej.crypto.DeterministicKey, String, org.phorej.core.NetworkParameters)}
+ * {@link org.astraj.crypto.DeterministicKey#deserializeB58(org.astraj.crypto.DeterministicKey, String, org.astraj.core.NetworkParameters)}
  * (with null as the first parameter) and then
- * {@link DeterministicKeyChain#DeterministicKeyChain(org.phorej.crypto.DeterministicKey,KeyChainType keyChaintype)}.</p>
+ * {@link DeterministicKeyChain#DeterministicKeyChain(org.astraj.crypto.DeterministicKey,KeyChainType keyChaintype)}.</p>
  *
- * <p>This class builds on {@link org.phorej.crypto.DeterministicHierarchy} and
- * {@link org.phorej.crypto.DeterministicKey} by adding support for serialization to and from protobufs,
+ * <p>This class builds on {@link org.astraj.crypto.DeterministicHierarchy} and
+ * {@link org.astraj.crypto.DeterministicKey} by adding support for serialization to and from protobufs,
  * and encryption of parts of the key tree. Internally it arranges itself as per the BIP 32 spec, with the seed being
  * used to derive a master key, which is then used to derive an account key, the account key is used to derive two
  * child keys called the <i>internal</i> and <i>external</i> parent keys (for change and handing out addresses respectively)
@@ -121,11 +121,11 @@ public class DeterministicKeyChain implements EncryptableKeyChain {
     //public static final ImmutableList<ChildNumber> BIP44_ACCOUNT_ZERO_PATH =
     //        ImmutableList.of(new ChildNumber(44, true), ChildNumber.ZERO_HARDENED, ChildNumber.ZERO_HARDENED);
 
-    // PHORE BIP44
+    // astra BIP44
     public static final ChildNumber BIP44_MASTER_KEY = new ChildNumber(44, true);
-    public static final ChildNumber PHORE_PATH = new ChildNumber(444,true);
+    public static final ChildNumber astra_PATH = new ChildNumber(444,true);
     public static final ImmutableList<ChildNumber> BIP44_ACCOUNT_ZERO_PATH =
-            ImmutableList.of(BIP44_MASTER_KEY, PHORE_PATH, ChildNumber.ZERO_HARDENED);
+            ImmutableList.of(BIP44_MASTER_KEY, astra_PATH, ChildNumber.ZERO_HARDENED);
 
     // We try to ensure we have at least this many keys ready and waiting to be handed out via getKey().
     // See docs for getLookaheadSize() for more info on what this is for. The -1 value means it hasn't been calculated
@@ -170,7 +170,7 @@ public class DeterministicKeyChain implements EncryptableKeyChain {
 
     // Key Chain version to support BIP44 fixed without refactor this code too much
     public static enum KeyChainType{
-        BIP32,BIP44_PHORE_ONLY
+        BIP32,BIP44_astra_ONLY
     }
 
 
@@ -341,7 +341,7 @@ public class DeterministicKeyChain implements EncryptableKeyChain {
     public DeterministicKeyChain(DeterministicKey watchingKey,KeyChainType keyChainType) {
         this.keyChainType = keyChainType;
         checkArgument(watchingKey.isPubKeyOnly(), "Private subtrees not currently supported: if you got this key from DKC.getWatchingKey() then use .dropPrivate().dropParent() on it first.");
-        if (keyChainType != KeyChainType.BIP44_PHORE_ONLY)
+        if (keyChainType != KeyChainType.BIP44_astra_ONLY)
             checkArgument( watchingKey.getPath().size() == getAccountPath().size(), "You can only watch an account key currently");
         basicKeyChain = new BasicKeyChain();
         this.seed = null;
@@ -480,7 +480,7 @@ public class DeterministicKeyChain implements EncryptableKeyChain {
         switch (keyChainType){
             case BIP32:
                 return ACCOUNT_ZERO_PATH;
-            case BIP44_PHORE_ONLY:
+            case BIP44_astra_ONLY:
                 return BIP44_ACCOUNT_ZERO_PATH;
             default:
                 throw new IllegalStateException("Uknown keyChainType");
@@ -503,7 +503,7 @@ public class DeterministicKeyChain implements EncryptableKeyChain {
     // Derives the account path keys and inserts them into the basic key chain. This is important to preserve their
     // order for serialization, amongst other things.
     private void initializeHierarchyUnencrypted(DeterministicKey baseKey) {
-        if (baseKey.isPubKeyOnly() && keyChainType == KeyChainType.BIP44_PHORE_ONLY){
+        if (baseKey.isPubKeyOnly() && keyChainType == KeyChainType.BIP44_astra_ONLY){
             externalParentKey = baseKey;
             internalParentKey = baseKey;
             addToBasicChain(externalParentKey);
@@ -698,7 +698,7 @@ public class DeterministicKeyChain implements EncryptableKeyChain {
      * <p>An alias for <code>getKeyByPath(getAccountPath())</code>.</p>
      *
      * <p>Use this when you would like to create a watching key chain that follows this one, but can't spend money from it.
-     * The returned key can be serialized and then passed into {@link #watch(org.phorej.crypto.DeterministicKey)}
+     * The returned key can be serialized and then passed into {@link #watch(org.astraj.crypto.DeterministicKey)}
      * on another system to watch the hierarchy.</p>
      *
      * <p>Note that the returned key is not pubkey only unless this key chain already is: the returned key can still
@@ -707,7 +707,7 @@ public class DeterministicKeyChain implements EncryptableKeyChain {
     public DeterministicKey getWatchingKey() {
         List<ChildNumber> childNumbers = Lists.newArrayList(getAccountPath());
         // first account only
-        if (keyChainType == KeyChainType.BIP44_PHORE_ONLY){
+        if (keyChainType == KeyChainType.BIP44_astra_ONLY){
             childNumbers.add(ChildNumber.ZERO);
         }
         return getKeyByPath(childNumbers,true);
@@ -873,7 +873,7 @@ public class DeterministicKeyChain implements EncryptableKeyChain {
                 path.add(new ChildNumber(i));
             if (!path.isEmpty() && path.get(0).equals(BIP44_MASTER_KEY)){
                 // is BIP44
-                keyChainType = KeyChainType.BIP44_PHORE_ONLY;
+                keyChainType = KeyChainType.BIP44_astra_ONLY;
                 break;
             }
         }
@@ -1395,7 +1395,7 @@ public class DeterministicKeyChain implements EncryptableKeyChain {
     /**
      * Whether the keychain is married.  A keychain is married when it vends P2SH addresses
      * from multiple keychains in a multisig relationship.
-     * @see org.phorej.wallet.MarriedKeyChain
+     * @see org.astraj.wallet.MarriedKeyChain
      */
     public boolean isMarried() {
         return false;

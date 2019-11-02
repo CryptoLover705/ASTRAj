@@ -14,9 +14,9 @@
 
 package wallettemplate.controls;
 
-import org.phorej.core.Address;
-import org.phorej.core.AddressFormatException;
-import org.phorej.core.NetworkParameters;
+import org.astraj.core.Address;
+import org.astraj.core.AddressFormatException;
+import org.astraj.core.NetworkParameters;
 import javafx.scene.Node;
 import javafx.scene.control.TextField;
 import wallettemplate.utils.TextFieldValidator;

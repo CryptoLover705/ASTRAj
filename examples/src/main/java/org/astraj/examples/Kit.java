@@ -12,22 +12,22 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.astraj.examples;
 
-import org.phorej.core.*;
-import org.phorej.kits.WalletAppKit;
-import org.phorej.params.TestNet3Params;
-import org.phorej.script.Script;
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.listeners.KeyChainEventListener;
-import org.phorej.wallet.listeners.ScriptsChangeEventListener;
-import org.phorej.wallet.listeners.WalletCoinsReceivedEventListener;
-import org.phorej.wallet.listeners.WalletCoinsSentEventListener;
+import org.astraj.core.*;
+import org.astraj.kits.WalletAppKit;
+import org.astraj.params.TestNet3Params;
+import org.astraj.script.Script;
+import org.astraj.wallet.Wallet;
+import org.astraj.wallet.listeners.KeyChainEventListener;
+import org.astraj.wallet.listeners.ScriptsChangeEventListener;
+import org.astraj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.astraj.wallet.listeners.WalletCoinsSentEventListener;
 
 import java.io.File;
 import java.util.List;
 
-import org.phorej.core.listeners.TransactionConfidenceEventListener;
+import org.astraj.core.listeners.TransactionConfidenceEventListener;
 
 /**
  * The following example shows how to use the by pivxj provided WalletAppKit.

@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-package org.phorej.params;
+package org.astraj.params;
 
 import java.math.BigInteger;
 import java.util.concurrent.TimeUnit;
 
-import org.phorej.core.*;
-import org.phorej.utils.MonetaryFormat;
-import org.phorej.store.BlockStore;
-import org.phorej.store.BlockStoreException;
+import org.astraj.core.*;
+import org.astraj.utils.MonetaryFormat;
+import org.astraj.store.BlockStore;
+import org.astraj.store.BlockStoreException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

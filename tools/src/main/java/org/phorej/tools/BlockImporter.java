@@ -12,18 +12,18 @@
  * limitations under the License.
  */
 
-package org.phorej.tools;
+package org.astraj.tools;
 
-import org.phorej.core.*;
-import org.phorej.params.MainNetParams;
-import org.phorej.params.TestNet3Params;
-import org.phorej.store.*;
-import org.phorej.utils.BlockFileLoader;
+import org.astraj.core.*;
+import org.astraj.params.MainNetParams;
+import org.astraj.params.TestNet3Params;
+import org.astraj.store.*;
+import org.astraj.utils.BlockFileLoader;
 import com.google.common.base.Preconditions;
 
 import java.io.File;
 
-/** Very thin wrapper around {@link org.phorej.utils.BlockFileLoader} */
+/** Very thin wrapper around {@link org.astraj.utils.BlockFileLoader} */
 public class BlockImporter {
     public static void main(String[] args) throws BlockStoreException, VerificationException, PrunedException {
         System.out.println("USAGE: BlockImporter (prod|test) (H2|Disk|MemFull|Mem|SPV) [blockStore]");

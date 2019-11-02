@@ -15,17 +15,17 @@
  * limitations under the License.
  */
 
-package org.phorej.tools;
+package org.astraj.tools;
 
-import org.phorej.core.listeners.NewBestBlockListener;
-import org.phorej.core.*;
-import org.phorej.params.MainNetParams;
-import org.phorej.params.RegTestParams;
-import org.phorej.params.TestNet3Params;
-import org.phorej.store.BlockStore;
-import org.phorej.store.MemoryBlockStore;
-import org.phorej.utils.BriefLogFormatter;
-import org.phorej.utils.Threading;
+import org.astraj.core.listeners.NewBestBlockListener;
+import org.astraj.core.*;
+import org.astraj.params.MainNetParams;
+import org.astraj.params.RegTestParams;
+import org.astraj.params.TestNet3Params;
+import org.astraj.store.BlockStore;
+import org.astraj.store.MemoryBlockStore;
+import org.astraj.utils.BriefLogFormatter;
+import org.astraj.utils.Threading;
 import com.google.common.base.Charsets;
 import com.google.common.io.Resources;
 import joptsimple.OptionParser;

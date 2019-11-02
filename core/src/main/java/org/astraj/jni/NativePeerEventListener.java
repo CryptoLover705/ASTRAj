@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.jni;
+package org.astraj.jni;
 
-import org.phorej.core.listeners.*;
-import org.phorej.core.*;
+import org.astraj.core.listeners.*;
+import org.astraj.core.*;
 
 import javax.annotation.*;
 import java.util.List;

@@ -12,9 +12,9 @@
  * limitations under the License.
  */
 
-package org.phorej.crypto;
+package org.astraj.crypto;
 
-import org.phorej.core.Utils;
+import org.astraj.core.Utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

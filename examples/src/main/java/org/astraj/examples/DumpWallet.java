@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.astraj.examples;
 
 import java.io.File;
 
-import org.phorej.wallet.Wallet;
+import org.astraj.wallet.Wallet;
 
 /**
  * DumpWallet loads a serialized wallet and prints information about what it contains.

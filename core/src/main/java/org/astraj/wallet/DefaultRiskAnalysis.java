@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.astraj.wallet;
 
-import org.phorej.core.Coin;
-import org.phorej.core.ECKey;
-import org.phorej.core.ECKey.ECDSASignature;
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.Transaction;
-import org.phorej.core.TransactionConfidence;
-import org.phorej.core.TransactionInput;
-import org.phorej.core.TransactionOutput;
-import org.phorej.crypto.TransactionSignature;
-import org.phorej.script.ScriptChunk;
+import org.astraj.core.Coin;
+import org.astraj.core.ECKey;
+import org.astraj.core.ECKey.ECDSASignature;
+import org.astraj.core.NetworkParameters;
+import org.astraj.core.Transaction;
+import org.astraj.core.TransactionConfidence;
+import org.astraj.core.TransactionInput;
+import org.astraj.core.TransactionOutput;
+import org.astraj.crypto.TransactionSignature;
+import org.astraj.script.ScriptChunk;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -114,7 +114,7 @@ public class DefaultRiskAnalysis implements RiskAnalysis {
 
     /**
      * The reason a transaction is considered non-standard, returned by
-     * {@link #isStandard(org.phorej.core.Transaction)}.
+     * {@link #isStandard(org.astraj.core.Transaction)}.
      */
     public enum RuleViolation {
         NONE,

@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-package org.phorej.signers;
+package org.astraj.signers;
 
-import org.phorej.core.ECKey;
-import org.phorej.core.TransactionInput;
-import org.phorej.crypto.TransactionSignature;
-import org.phorej.script.Script;
-import org.phorej.script.ScriptChunk;
-import org.phorej.wallet.KeyBag;
-import org.phorej.wallet.Wallet;
+import org.astraj.core.ECKey;
+import org.astraj.core.TransactionInput;
+import org.astraj.crypto.TransactionSignature;
+import org.astraj.script.Script;
+import org.astraj.script.ScriptChunk;
+import org.astraj.wallet.KeyBag;
+import org.astraj.wallet.Wallet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * This transaction signer resolves missing signatures in accordance with the given {@link org.phorej.wallet.Wallet.MissingSigsMode}.
+ * This transaction signer resolves missing signatures in accordance with the given {@link org.astraj.wallet.Wallet.MissingSigsMode}.
  * If missingSigsMode is USE_OP_ZERO this signer does nothing assuming missing signatures are already presented in
  * scriptSigs as OP_0.
  * In MissingSigsMode.THROW mode this signer will throw an exception. It would be MissingSignatureException

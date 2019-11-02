@@ -14,24 +14,24 @@
  * limitations under the License.
  */
 
-package org.phorej.signers;
+package org.astraj.signers;
 
 import java.util.EnumSet;
-import org.phorej.core.ECKey;
-import org.phorej.core.ScriptException;
-import org.phorej.core.Transaction;
-import org.phorej.core.TransactionInput;
-import org.phorej.crypto.DeterministicKey;
-import org.phorej.crypto.TransactionSignature;
-import org.phorej.script.Script;
-import org.phorej.script.Script.VerifyFlag;
-import org.phorej.wallet.KeyBag;
-import org.phorej.wallet.RedeemData;
+import org.astraj.core.ECKey;
+import org.astraj.core.ScriptException;
+import org.astraj.core.Transaction;
+import org.astraj.core.TransactionInput;
+import org.astraj.crypto.DeterministicKey;
+import org.astraj.crypto.TransactionSignature;
+import org.astraj.script.Script;
+import org.astraj.script.Script.VerifyFlag;
+import org.astraj.wallet.KeyBag;
+import org.astraj.wallet.RedeemData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * <p>{@link TransactionSigner} implementation for signing inputs using keys from provided {@link org.phorej.wallet.KeyBag}.</p>
+ * <p>{@link TransactionSigner} implementation for signing inputs using keys from provided {@link org.astraj.wallet.KeyBag}.</p>
  * <p>This signer doesn't create input scripts for tx inputs. Instead it expects inputs to contain scripts with
  * empty sigs and replaces one of the empty sigs with calculated signature.
  * </p>
@@ -40,7 +40,7 @@ import org.slf4j.LoggerFactory;
  * {@link ProposedTransaction} object that will be also passed then to the next signer in chain. This allows other
  * signers to use correct signing key for P2SH inputs, because all the keys involved in a single P2SH address have
  * the same derivation path.</p>
- * <p>This signer always uses {@link org.phorej.core.Transaction.SigHash#ALL} signing mode.</p>
+ * <p>This signer always uses {@link org.astraj.core.Transaction.SigHash#ALL} signing mode.</p>
  */
 public class LocalTransactionSigner extends StatelessTransactionSigner {
     private static final Logger log = LoggerFactory.getLogger(LocalTransactionSigner.class);

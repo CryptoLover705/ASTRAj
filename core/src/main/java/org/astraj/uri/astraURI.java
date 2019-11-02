@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.uri;
+package org.astraj.uri;
 
-import org.phorej.core.*;
-import org.phorej.params.AbstractBitcoinNetParams;
+import org.astraj.core.*;
+import org.astraj.params.AbstractBitcoinNetParams;
 
 import javax.annotation.Nullable;
 import java.io.UnsupportedEncodingException;
@@ -67,7 +67,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
  * @author Gary Rowe (BIP21 support)
  * @see <a href="https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki">BIP 0021</a>
  */
-public class PhoreURI {
+public class astraURI {
     // Not worth turning into an enum
     public static final String FIELD_MESSAGE = "message";
     public static final String FIELD_LABEL = "label";
@@ -77,8 +77,8 @@ public class PhoreURI {
     public static final String FIELD_INSTANTSEND = "is";
 
     /**
-     * URI for Bitcoin network. Use {@link org.phorej.params.AbstractBitcoinNetParams#BITCOIN_SCHEME} if you specifically
-     * need Bitcoin, or use {@link org.phorej.core.NetworkParameters#getUriScheme} to get the scheme
+     * URI for Bitcoin network. Use {@link org.astraj.params.AbstractBitcoinNetParams#BITCOIN_SCHEME} if you specifically
+     * need Bitcoin, or use {@link org.astraj.core.NetworkParameters#getUriScheme} to get the scheme
      * from network parameters.
      */
     @Deprecated
@@ -93,12 +93,12 @@ public class PhoreURI {
     private final Map<String, Object> parameterMap = new LinkedHashMap<String, Object>();
 
     /**
-     * Constructs a new PhoreURI from the given string. Can be for any network.
+     * Constructs a new astraURI from the given string. Can be for any network.
      *
      * @param uri The raw URI data to be parsed (see class comments for accepted formats)
      * @throws BitcoinURIParseException if the URI is not syntactically or semantically valid.
      */
-    public PhoreURI(String uri) throws BitcoinURIParseException {
+    public astraURI(String uri) throws BitcoinURIParseException {
         this(null, uri);
     }
 
@@ -111,7 +111,7 @@ public class PhoreURI {
      *
      * @throws BitcoinURIParseException If the input fails Bitcoin URI syntax and semantic checks.
      */
-    public PhoreURI(@Nullable NetworkParameters params, String input) throws BitcoinURIParseException {
+    public astraURI(@Nullable NetworkParameters params, String input) throws BitcoinURIParseException {
         checkNotNull(input);
 
         String scheme = null == params
@@ -322,7 +322,7 @@ public class PhoreURI {
 
     @Override
     public String toString() {
-        StringBuilder builder = new StringBuilder("PhoreURI[");
+        StringBuilder builder = new StringBuilder("astraURI[");
         boolean first = true;
         for (Map.Entry<String, Object> entry : parameterMap.entrySet()) {
             if (first) {

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.phorej.net;
+package org.astraj.net;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;

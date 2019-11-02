@@ -12,13 +12,13 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.astraj.wallet;
 
-import org.phorej.core.Coin;
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.Transaction;
-import org.phorej.core.TransactionConfidence;
-import org.phorej.core.TransactionOutput;
+import org.astraj.core.Coin;
+import org.astraj.core.NetworkParameters;
+import org.astraj.core.Transaction;
+import org.astraj.core.TransactionConfidence;
+import org.astraj.core.TransactionOutput;
 import com.google.common.annotations.VisibleForTesting;
 
 import java.math.BigInteger;

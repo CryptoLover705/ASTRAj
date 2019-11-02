@@ -14,9 +14,9 @@
 
 package wallettemplate;
 
-import org.phorej.core.listeners.DownloadProgressTracker;
-import org.phorej.core.Coin;
-import org.phorej.utils.MonetaryFormat;
+import org.astraj.core.listeners.DownloadProgressTracker;
+import org.astraj.core.Coin;
+import org.astraj.utils.MonetaryFormat;
 import com.subgraph.orchid.TorClient;
 import com.subgraph.orchid.TorInitializationListener;
 import javafx.animation.FadeTransition;
