@@ -37,7 +37,7 @@ These are found in the `examples` module.
 
 #### Forwarding service
 
-This will download the block chain and eventually print a PIVX address that it has generated.
+This will download the block chain and eventually print a ASTRA address that it has generated.
 
 If you send coins to that address, it will forward them on to the address you specified.
 
